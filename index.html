@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sijan Production - Video Editing Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sijan Production - Video Editing Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Welcome to Sijan Production</h1>
-        <nav>
-            <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="gallery">
-            <div class="project">
-                <iframe src="https://www.youtube.com/embed/bcOAPdAJbUQ" frameborder="0" allowfullscreen></iframe>
-                <p>Project 1</p>
-            </div>
-            <div class="project">
-                <iframe src="https://www.youtube.com/embed/FjSIRFi15Ko" frameborder="0" allowfullscreen></iframe>
-                <p>Project 2</p>
-            </div>
-            <div class="project">
-                <iframe src="https://www.youtube.com/embed/57i0zKqWIa4" frameborder="0" allowfullscreen></iframe>
-                <p>Project 3</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Sijan, a professional video editor specializing in high-quality edits for content creators, real estate agents, and businesses. Check out my work!</p>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Sijan Production. All rights reserved.</p>
-    </footer>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Welcome to Sijan Production</h1>
+    <p>Your vision, our expertise.</p>
+    <a href="#portfolio" class="btn">View Portfolio</a>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service">
+      <h3>Video Editing</h3>
+      <p>High-quality video editing for all types of content.</p>
+    </div>
+    <div class="service">
+      <h3>Real Estate Videos</h3>
+      <p>Stunning property showcases to attract buyers.</p>
+    </div>
+    <div class="service">
+      <h3>Corporate Videos</h3>
+      <p>Professional videos for your business needs.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <div class="project">
+        <iframe src="https://www.youtube.com/embed/bcOAPdAJbUQ"></iframe>
+        <p>Project 1</p>
+      </div>
+      <div class="project">
+        <iframe src="https://www.youtube.com/embed/FjSIRFi15Ko"></iframe>
+        <p>Project 2</p>
+      </div>
+      <div class="project">
+        <iframe src="https://www.youtube.com/embed/57i0zKqWIa4"></iframe>
+        <p>Project 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <blockquote>
+      <p>"Sijan did an amazing job on our video!"</p>
+      <cite>- Happy Client</cite>
+    </blockquote>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Sijan, a professional video editor with a passion for storytelling through visual media.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Sijan Production. All rights reserved.</p>
+  </footer>
 </body>
 </html>
