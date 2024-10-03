@@ -3,50 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Video Editing Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #333; /* Dark background */
+            color: #fff; /* Light text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #client-reviews {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 600px; /* Adjust to your desired width */
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none; /* Hide slides by default */
+            text-align: center;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Your Name or Company Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#video-editing">Video Editing Portfolio</a></li>
-                <li><a href="#thumbnail-portfolio">Thumbnail Portfolio</a></li>
-                <li><a href="#youtube-seo">YouTube SEO Portfolio</a></li>
-                <li><a href="#client-reviews">Client Reviews</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to My Video Editing Portfolio</h1>
+        <p>Showcasing the best of my work!</p>
     </header>
-
-    <section id="video-editing">
-        <h2>Video Editing Portfolio</h2>
-        <p>Showcase your video editing work here.</p>
-        <!-- Add your video editing content (e.g., thumbnails, links, or embedded videos) -->
-    </section>
-
-    <section id="thumbnail-portfolio">
-        <h2>Thumbnail Portfolio</h2>
-        <p>Showcase your thumbnail designs here.</p>
-        <!-- Add your thumbnail content (e.g., images or links) -->
-    </section>
-
-    <section id="youtube-seo">
-        <h2>YouTube SEO Portfolio</h2>
-        <p>Showcase your YouTube SEO services here.</p>
-        <!-- Add your YouTube SEO content (e.g., case studies, tips, or client success stories) -->
-    </section>
 
     <section id="client-reviews">
         <h2>Client Reviews</h2>
         <p>What your clients say about you.</p>
-        <!-- Add your client reviews here -->
+
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <h3>Client Name 1</h3>
+                <p>“This service was fantastic! I loved the final product.”</p>
+                <video controls width="300">
+                    <source src="path/to/client-video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="mySlides">
+                <h3>Client Name 2</h3>
+                <p>“Highly recommend! Professional and efficient.”</p>
+                <img src="path/to/screenshot1.jpg" alt="Screenshot of client review" width="300">
+            </div>
+
+            <div class="mySlides">
+                <h3>Client Name 3</h3>
+                <p>“The quality exceeded my expectations!”</p>
+                <video controls width="300">
+                    <source src="path/to/client-video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Your Name or Company Name. All rights reserved.</p>
-    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex - 1].style.display = "block";  
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
 </body>
 </html>
