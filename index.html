@@ -3,64 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sijan Production - Video Editing Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sijan's Video Editing Services</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <!-- Header -->
+
     <header>
-        <h1>Welcome to Sijan Production</h1>
+        <h1>Sijan's Video Editing</h1>
         <nav>
             <ul>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="gallery">
-            <div class="project">
-                <iframe src="https://www.youtube.com/embed/bcOAPdAJbUQ" allowfullscreen></iframe>
-                <p>Project 1</p>
-            </div>
-            <div class="project">
-                <iframe src="https://www.youtube.com/embed/FjSIRFi15Ko" allowfullscreen></iframe>
-                <p>Project 2</p>
-            </div>
-            <div class="project">
-                <iframe src="https://www.youtube.com/embed/57i0zKqWIa4" allowfullscreen></iframe>
-                <p>Project 3</p>
-            </div>
+    <section class="hero">
+        <h2>Your Vision, Our Edits</h2>
+        <p>Transforming raw footage into captivating stories.</p>
+        <a href="#contact" class="cta">Get Started</a>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Video Editing</h3>
+            <p>Professional editing for all types of videos, including vlogs, promos, and more.</p>
+        </div>
+        <div class="service">
+            <h3>Color Grading</h3>
+            <p>Enhance your video with professional color grading for a cinematic look.</p>
+        </div>
+        <div class="service">
+            <h3>Motion Graphics</h3>
+            <p>Bring your videos to life with stunning motion graphics and animations.</p>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Sijan, a professional video editor specializing in high-quality edits for content creators, real estate agents, and businesses. Check out my work!</p>
+    <section id="portfolio">
+        <h2>Our Work</h2>
+        <div class="portfolio-item">
+            <h3>Project 1</h3>
+            <p>A brief description of the project.</p>
+            <img src="images/project1-thumbnail.jpg" alt="Project 1 Thumbnail">
+        </div>
+        <div class="portfolio-item">
+            <h3>Project 2</h3>
+            <p>A brief description of the project.</p>
+            <img src="images/project2-thumbnail.jpg" alt="Project 2 Thumbnail">
+        </div>
+        <div class="portfolio-item">
+            <h3>Project 3</h3>
+            <p>A brief description of the project.</p>
+            <img src="images/project3-thumbnail.jpg" alt="Project 3 Thumbnail">
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>“Sijan's edits transformed my videos!” - Client Name</p>
+        <p>“Highly recommend their video editing services!” - Another Client</p>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2024 Sijan Production. All rights reserved.</p>
+        <p>&copy; 2024 Sijan's Video Editing. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
